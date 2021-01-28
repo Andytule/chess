@@ -7,14 +7,14 @@ import {HTML5Backend} from 'react-dnd-html5-backend'
 
 
 function App () {
-    const [board, setboard] = useState([])
+    const [board, setBoard] = useState([])
     const [isGameOver, setIsGameOver] = useState()
     const [result, setResult] = useState()
     const [turn, setTurn] = useState()
     useEffect(() => {
         initGame()
-        const subscribe = gameSubject.subscribe(game => {
-            setboard(game.board)
+        const subscribe = gameSubject.subscribe((game) => {
+            setBoard(game.board)
             setIsGameOver(game.isGameOver)
             setResult(game.result)
             setTurn(game.turn)
