@@ -1,5 +1,98 @@
-.App {
-  text-align: center;
-  background-color: red;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+.interface {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #779ECB;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-container {
+    width: 600px;
+    height: 600px;
+}
+
+.board {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 12.5%;
+    height: 12.5%;
+}
+
+.promote-square {
+    width: 50%;
+    height: 50%;
+}
+
+.square-black {
+    background: #7B8FA5;
+}
+
+.square-white {
+    background: #D6D6D6;
+}
+
+.board-square {
+    width: 100%;
+    height: 100%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.piece-container {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.piece {
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.vertical-text {
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.vertical-text button {
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    background: #D6D6D6;
+    border-radius: 10px;
+}
+
+.reset {
+    margin-top: 30px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    cursor: pointer;
+    background: #D6D6D6;
+    border-radius: 10px;
+    width: 150px;
+}
